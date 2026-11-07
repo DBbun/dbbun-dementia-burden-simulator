@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DBbun Dementia Burden Simulator (research prototype)</title>
+<meta name="description" content="Research prototype from DBbun LLC: reads dementia papers and sorts the burdens they report on patients and caregivers into 15 draft categories. Not validated.">
+<style>
+:root{--bg:#fff;--fg:#111;--mute:#555;--line:#ccc;--band:#f2f2f2;--warn:#e8e8e8}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--mute:#aaa;--line:#444;--band:#232323;--warn:#2c2c2c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Arial,Helvetica,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 48px}
+header{border-bottom:1px solid var(--line);padding:20px 0 12px}
+header .tag{font-size:13px;color:var(--mute)}
+h1{font-size:26px;margin:4px 0 2px}
+h2{font-size:20px;margin:32px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.banner{background:var(--warn);border:1px solid var(--line);padding:10px 14px;margin:16px 0;font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--band)}
+.n{color:var(--mute);font-size:13px}
+.prov{font-size:12px;border:1px solid var(--mute);padding:0 4px;margin-left:4px;white-space:nowrap}
+.scroll{overflow-x:auto}
+a{color:inherit}
+footer{margin-top:40px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="tag">DBbun LLC &middot; research prototype &middot; public read-only page</div>
+<h1>DBbun Dementia Burden Simulator</h1>
+<div class="tag">Working title. Software test copy. Draft categories, not validated.</div>
+</header>
+
+<div class="banner"><strong>Read this first.</strong> This page describes a research prototype. It is not medical advice, not a clinical tool and not a validated measure. Nothing here has been checked by a clinician or an ethics board. Figures shown come from public federal files and are copied with their source, year and caveats. No paper results are shown yet.</div>
+
+<h2>What it does</h2>
+<p>People who live with dementia and the family members who care for them carry burdens that are spread across many papers and often reported in different units. The prototype reads an open-access dementia paper and lists the burdens it reports for patients and for caregivers, each one with the exact sentence, the page or table where it appears, and a check that the number really occurs in the paper's text.</p>
+<ol>
+<li><strong>Read.</strong> The paper's text is split by page so every finding can point back to its location.</li>
+<li><strong>Extract.</strong> A language model proposes findings, each tagged with one of 15 draft burden categories, who it concerns (patient, caregiver or both) and who reported it.</li>
+<li><strong>Check.</strong> A separate script confirms that each quoted sentence and each number occurs in the paper. Findings that fail are marked, not hidden.</li>
+</ol>
+<p class="n">The tool is adapted from DBbun's earlier software for a different federal challenge on Lyme disease and Long COVID cost of illness. Its categories, prompts and page were rewritten for dementia and caregivers; the code that reads papers and runs the checks was reused.</p>
+
+<h2>The 15 draft categories</h2>
+<p class="n">Codebook version 0.3, a draft dated 2026-11-04. Provisional categories are reported separately until tested.</p>
+<div class="scroll"><table>
+<thead><tr><th>#</th><th>Category</th><th>Plain meaning</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Direct costs</td><td>Money paid for health and care services, by any payer</td></tr>
+<tr><td>2</td><td>Caregiving labor</td><td>Time and effort given by family or friends</td></tr>
+<tr><td>3</td><td>Work, income and wealth</td><td>Employment changes, earnings and assets of the patient or caregiver</td></tr>
+<tr><td>5</td><td>Psychological burden</td><td>Depression, anxiety, distress and caregiver strain scales</td></tr>
+<tr><td>6</td><td>Quality of life</td><td>Quality-of-life scores, including monetized quality-of-life loss</td></tr>
+<tr><td>7</td><td>Caregiver physical health and sleep</td><td>Caregiver's own health, sleep and health behaviors</td></tr>
+<tr><td>8</td><td>Social isolation and participation<span class="prov">provisional</span></td><td>Less social contact, leisure or community activity; loneliness</td></tr>
+<tr><td>9</td><td>Functional dependence</td><td>Need for help with daily activities and loss of independence</td></tr>
+<tr><td>10</td><td>Behavioral and neuropsychiatric symptoms<span class="prov">provisional scope</span></td><td>Agitation, apathy, psychosis, wandering</td></tr>
+<tr><td>11</td><td>Diagnostic delay</td><td>Time from first symptoms to diagnosis</td></tr>
+<tr><td>12</td><td>Dismissal of symptoms</td><td>Symptoms dismissed or attributed to something else</td></tr>
+<tr><td>13</td><td>Access barriers</td><td>Needed services that were not received</td></tr>
+<tr><td>14</td><td>Fragmented care</td><td>Services received but not coordinated</td></tr>
+<tr><td>15</td><td>Care transitions and crises<span class="prov">provisional</span></td><td>Placement, hospital or emergency visits, breakdown of the care arrangement</td></tr>
+<tr><td>16</td><td>Administrative burden</td><td>Paperwork, appeals and navigating benefits</td></tr>
+</tbody></table></div>
+<p class="n">Numbers 4 and 17 were retired in version 0.3 and kept as gaps so older notes still read correctly. A separate "other burden" row records anything the categories miss.</p>
+
+<h2>Public federal data it can be set beside</h2>
+<p>These counts come from public federal files downloaded on 2026-11-06. They give context only; the prototype does not yet combine them with paper findings.</p>
+<div class="scroll"><table>
+<thead><tr><th>Item</th><th>Value</th><th>Source and year</th><th>Caveat</th></tr></thead>
+<tbody>
+<tr><td>Deaths with Alzheimer's disease (ICD-10 G30) as underlying cause</td><td>116,076</td><td>CDC NCHS public mortality file, 2024</td><td>Death records, not people living with the disease</td></tr>
+<tr><td>Deaths with unspecified dementia (F03)</td><td>86,765</td><td>same</td><td>same</td></tr>
+<tr><td>Deaths with vascular dementia (F01)</td><td>21,839</td><td>same</td><td>Underlying cause only; misses deaths where dementia was a contributing cause</td></tr>
+<tr><td>Adults 45+ reporting memory or thinking difficulties that are getting worse</td><td>19.2% (weighted)</td><td>CDC BRFSS 2025, cognitive decline module; 74,780 answers</td><td>Asked in 16 areas only (CT, DE, GA, HI, IL, IN, KS, KY, MO, OR, PR, RI, TN, TX, WA, WI). Self-report, not a diagnosis. Not a national estimate</td></tr>
+<tr><td>Adults who gave regular care to a family member or friend in the past 30 days</td><td>23.4% (weighted)</td><td>CDC BRFSS 2025, caregiver module; 154,632 answers</td><td>Asked in 27 areas only. Not a national estimate</td></tr>
+<tr><td>Caregivers whose care recipient also has Alzheimer's disease, dementia or another cognitive impairment</td><td>14.5% (weighted)</td><td>CDC BRFSS 2025; 32,510 answers</td><td>Same 27 areas; among those asked</td></tr>
+</tbody></table></div>
+<p class="n">Also downloaded but not yet analyzed here: the 2025 National Health Interview Survey adult file (cognitive difficulty items) and the 2024 Medical Expenditure Panel Survey files. The 2024 MEPS conditions file has only 79 dementia records, too few for subgroup estimates.</p>
+
+<h2>Worked examples</h2>
+<p>Examples built from open-access dementia papers are being prepared. Each will show the tool's findings next to the checker's result, and will state the paper's license. Until then this page shows no paper results.</p>
+
+<h2>How it is being tested</h2>
+<ul>
+<li>A pilot on two or three open-access dementia papers. A person codes each paper by hand using the written codebook before looking at any tool output.</li>
+<li>Targets set in advance: at least 95% of extracted numbers correct, 100% of locators valid, at least 90% of category labels correct.</li>
+<li>The codebook is a draft until frozen; any later change is dated, explained and tied to the papers affected.</li>
+<li>Findings the checker cannot confirm are reported as such.</li>
+</ul>
+
+<h2>AI use</h2>
+<p>Software and page text were written with Claude (Anthropic): Claude Sonnet 5.5 (model ID claude-sonnet-5-5). The extraction step in the prototype calls claude-sonnet-5. The draft codebook was reviewed with four language models, treated as opinions and not as evidence. A person made all design decisions and reviews the output.</p>
+
+<footer>
+&copy; DBbun LLC, Cambridge, MA &middot; <a href="https://dbbun.com">dbbun.com</a> &middot; Public federal data sources: CDC NCHS, CDC BRFSS, AHRQ MEPS. This page has no tracking and runs no model; it is a static description.
+</footer>
+</div>
+</body>
+</html>
