@@ -1200,16 +1200,16 @@ function renderOperationFlow(job){
      real:`For this simulation: ${docNames}, ${(job.documents||[]).length} document(s), ${truncatedAny?'one or more were truncated to fit the processing limit':'none were truncated'}.`},
     {title:'2. Federal data: context only',
      desc:'The tool\u2019s built-in federal corpus was built for Lyme disease and Long COVID, so it is not searched for dementia papers. No federal figure was offered to the model for this simulator, and no federal figure feeds its numbers. Four context cards from CDC files (BRFSS 2025 survey items and NCHS death records) are shown on the Evidence tab, read or counted by code with no AI model. They describe different populations from the paper.',
-     real:`For this simulation: ${ck.eligible_review_units||0} federal units were eligible; ${ck.selected?.length||0} were offered as background; ${citedCount} were cited by the model.`},
+     real:`For this simulation: no federal data were used. The four context cards on the Evidence tab are shown for background only.`},
     {title:'3. Generative AI (up to 4 model calls)',
      desc:'Claude Sonnet 5 (Anthropic) was called to extract the scientific analysis from the paper; draft the interactive specification and documentation; generate named what-if scenarios and forecasts; and, separately, a Python reference implementation. The model proposes; the code calculates.',
      real:`For this simulation: ${calls.length} real model call(s), $${totalCost.toFixed(4)} actual cost.`},
     {title:'4. Checks in code and by hand',
      desc:'A script checked that each extracted number and each quoted sentence occurs in the paper\u2019s text. That shows a figure is in the paper, not that its label is right, so a person read the findings against the paper and corrected or removed the ones that were mislabeled. No federal comparison is computed for dementia yet, so the \u201cpaper versus federal\u201d checks are empty.',
-     real:`For this simulation: ${crossChecks.length} quantit${crossChecks.length===1?'y':'ies'} compared with federal data.`},
+     real:crossChecks.length?`For this simulation: ${crossChecks.length} quantit${crossChecks.length===1?'y':'ies'} compared with federal data.`:`For this simulation: no comparison with federal data was computed.`},
     {title:'5. Simulation bundle',
      desc:'The validated specification becomes this interactive browser simulator; the same data also produces a downloadable ZIP and an Excel workbook (Export tab). This is a draft: the labels and burden categories have not been fully reviewed.',
-     real:`For this simulation: ${s.outputs?.length||0} output(s), ${s.scenarios?.length||0} named scenario(s), ${s.trajectories?.length||0} forecast trajectory/trajectories.`},
+     real:`For this simulation: ${s.outputs?.length||0} output(s), ${s.scenarios?.length||0} named scenario(s), ${s.trajectories?.length?`${s.trajectories.length} forecast trajectory/trajectories.`:`no forecast (the paper reports no rate per period).`}`},
   ];
   steps.forEach((step,i)=>{
     const box=document.createElement('div');box.className='flowStep';
@@ -1230,7 +1230,7 @@ function showReview(job){
   $('reviewbody').replaceChildren();
   {const note=(current.downloadable_source_status==='ready'?'':(current.review_note||'')).replace('Your interactive simulation is ready. Review the assumptions below and adjust them in the simulator.','').trim();if(note)text('p',note,$('reviewbody'))}
   if(current.unresolved_findings?.length){text('h3','Issues to review before exploration',$('reviewbody'));for(const finding of current.unresolved_findings){const item=text('p',`${finding.severity.toUpperCase()}: ${finding.issue} Next: ${finding.requested_change}`,$('reviewbody'));item.className='warning'}}
-  if(current.detected_condition){const names={dementia:'Dementia and caregivers'};text('h3','Evidence focus',$('reviewbody'));text('p',current.reuse_demonstration?`Reuse demonstration: ${current.condition_label||'another condition'} (outside Lyme disease and Long COVID)`:(names[current.detected_condition]||current.detected_condition),$('reviewbody'));if(current.condition_rationale)text('p',current.condition_rationale,$('reviewbody'))}
+  if(current.detected_condition){const names={dementia:'Dementia and caregivers'};text('h3','Evidence focus',$('reviewbody'));text('p',current.reuse_demonstration?`Reuse demonstration: ${current.condition_label||'another condition'} (outside Lyme disease and Long COVID)`:(names[current.detected_condition]||current.detected_condition),$('reviewbody'));text('p','Built from one dementia paper. No federal data were used for this simulator.',$('reviewbody'))}
   renderFederalKnowledge(current.condition_knowledge,current.scientific_analysis?.federal_evidence_used,current.federal_crosschecks);
   renderEvidenceMap(current);
   loadFederalBenchmarks(jobId);
@@ -3751,7 +3751,7 @@ function renderAtAGlance(job){
   if(tally.context)parts.push(tally.context+' context only');
   if(tally.restated)parts.push(tally.restated+' restated in current dollars');
   if(tally.not_checked)parts.push(tally.not_checked+' not checkable');
-  tiles.appendChild(tile(String(checks.length),checks.length===1?'figure checked against federal data':'figures checked against federal data',checks.length?'in code, not by the AI model: '+parts.join('; '):'no figure in this paper could be checked against federal data',null,tip=>{
+  tiles.appendChild(tile(checks.length?String(checks.length):'None',checks.length===1?'figure checked against federal data':(checks.length?'figures checked against federal data':'federal comparison computed'),checks.length?'in code, not by the AI model: '+parts.join('; '):'no figure in this paper could be checked against federal data',null,tip=>{
     head(tip,'Figures checked against federal data');
     covTipLine(tip,'','A figure is a number taken from the paper, such as a dollar amount or a case count. The system compared it with a federal source in code; the AI model does not do this comparison.');
     if(!checks.length){covTipLine(tip,'','No figure in this paper was a kind the system can check: dollar amounts, Lyme case counts, or national Long COVID prevalence.');return}
@@ -3901,7 +3901,7 @@ function bbShowSummary(box,sum,job,status){
   }
   text('p','A synthetic sandbox beneficiary is not a patient with Lyme disease or Long COVID, and claims in the sandbox are not filtered by diagnosis. This shows how a person\'s own record would sit beside a paper\'s numbers. It is not a comparison of real patients and not medical advice.',box).className='changeNote';
 }
-async function renderBlueButton(job){
+async function renderBlueButton(job){return;
   const box=$('blueButtonPanel');if(!box)return;
   box.replaceChildren();box.hidden=false;
   text('h4','Bring your own claims: Medicare Blue Button 2.0 (sandbox demo)',box);
