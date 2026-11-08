@@ -3557,7 +3557,7 @@ function publicationYear(row){
   return years?Number(years[years.length-1]):0;
 }
 function simNumberPrefix(id){const r=libraryAllRows.find(x=>x.id===id);return r&&r.number?r.number+'. ':''}
-function libraryCompare(a,b){return publicationYear(b)-publicationYear(a)||authorLabel(a).localeCompare(authorLabel(b))}
+function libraryCompare(a,b){return (a.number||0)-(b.number||0)||publicationYear(b)-publicationYear(a)||authorLabel(a).localeCompare(authorLabel(b))}
 
 const covTip=(()=>{
   let el=null;
