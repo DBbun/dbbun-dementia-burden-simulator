@@ -9,6 +9,7 @@ An independent project by DBbun LLC, adapted from its entry in the TOPx HHS Tech
 Static pages describing a research prototype from DBbun LLC. Draft categories, not validated.
 
 - `index.html`, `static_shim.js`, `theme.css`: the simulator library (static; data are read from `data/`).
+- `docs.html`: supporting documents (quality log, corrections, interoperability status, references, AI use).
 - `about.html`: what the prototype does, draft categories.
 - `data/`: the three draft simulators (each from one CC BY 4.0 paper), references, and federal context cards (CDC BRFSS 2025, CDC NCHS deaths). Federal data are context only; they are not inputs to any simulator.
 - `library.html`: redirects to `index.html`.

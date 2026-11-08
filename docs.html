@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supporting documents · DBbun Dementia Burden Simulator (research prototype)</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mute:#555;--line:#ccc;--band:#f2f2f2;--warn:#e8e8e8}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--mute:#aaa;--line:#444;--band:#232323;--warn:#2c2c2c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Arial,Helvetica,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 48px}
+header{border-bottom:1px solid var(--line);padding:20px 0 12px}
+header .tag{font-size:13px;color:var(--mute)}
+h1{font-size:26px;margin:4px 0 2px}
+h2{font-size:20px;margin:34px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.banner{background:var(--warn);border:1px solid var(--line);padding:10px 14px;margin:16px 0;font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--band)}
+.n{color:var(--mute);font-size:13px}
+.scroll{overflow-x:auto}
+a{color:inherit}
+nav a{margin-right:14px}
+footer{margin-top:40px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="tag">DBbun LLC &middot; research prototype &middot; <a href="index.html">back to the simulator library</a></div>
+<h1>Supporting documents</h1>
+<div class="tag">Quality checks, changes made, interoperability status, references and AI use. Drafts, not validated.</div>
+</header>
+<div class="banner"><strong>Read this first.</strong> These notes describe a research prototype. They are not medical advice and not a validation report. Where something was not checked, this page says so.</div>
+<nav><a href="#qa">Quality assurance log</a><a href="#changes">Changes and corrections</a><a href="#interop">Interoperability status</a><a href="#refs">References</a><a href="#ai">AI use</a></nav>
+
+<h2 id="qa">Quality assurance log</h2>
+<p>Three simulators were built on 2026-11-07, each from one open-access paper (CC BY 4.0, confirmed in each article's own license statement). A script then checked every extracted finding against the paper's text.</p>
+<div class="scroll"><table>
+<thead><tr><th>Paper</th><th>Findings kept</th><th>Numbers found in the paper</th><th>Quotes found verbatim</th><th>Model fee</th></tr></thead>
+<tbody>
+<tr><td>Puerto Rico caregivers (PMC13017666)</td><td>6</td><td>6 of 6</td><td>6 of 6</td><td>$0.42</td></tr>
+<tr><td>Qatar private nursing (PMC13612328)</td><td>10</td><td>10 of 10</td><td>10 of 10</td><td>$0.54</td></tr>
+<tr><td>German medication burden (PMC13063673)</td><td>14</td><td>12 of 12 (2 findings have no value)</td><td>14 of 14</td><td>$0.54</td></tr>
+</tbody></table></div>
+<p class="n">Total model fees for the three successful runs were $1.51; a first attempt on the Puerto Rico paper failed under a lower output limit and cost $0.22, so $1.72 in all. Counts are after the corrections listed below.</p>
+<p><strong>What the checks do not show.</strong> A number "found" means the figure occurs somewhere in the paper's text. It does not show that the label attached to it is right. That is why a person read the findings against the papers and made the corrections below. A person has not yet reviewed every label, and the burden categories are not assigned.</p>
+<p><strong>Not done.</strong> The interactive arithmetic was not independently re-computed. The generated Python file in each bundle is marked "not execution tested". No clinician or ethics board has reviewed any simulator. The pilot that tests the extraction against hand coding has not been run yet; its targets (at least 95% of numbers correct, 100% of locators valid, at least 90% of category labels correct) were set in advance.</p>
+
+<h2 id="changes">Changes and corrections</h2>
+<p>These are the changes made after reading the model's findings against each paper. The model's original output was kept as a backup.</p>
+<div class="scroll"><table>
+<thead><tr><th>Paper</th><th>What was wrong</th><th>What was done</th></tr></thead>
+<tbody>
+<tr><td>Puerto Rico</td><td>One quote was a paraphrase with an ellipsis, not a sentence from the paper. A screening-tool entry (IQCODE) had no value.</td><td>Quote replaced with the paper's own sentence. The IQCODE entry was dropped.</td></tr>
+<tr><td>Qatar</td><td>A p-value (0.32, from the table on caregiving hours) was shown as a burden measure.</td><td>Dropped. One entry with a conflict inside the paper (caregiving duration, 5.6 years in the text and 2.6 in a table) was kept, with a note.</td></tr>
+<tr><td>German</td><td>Two Mann-Whitney U statistics were shown as differences in burden. One correlation was labeled as a burden. Four service-importance ratings and one other entry were not burden measures.</td><td>The two results became "no significant difference" with the paper's p-values (0.066 and 0.595) and no value. The correlation was relabeled. The five non-burden entries were dropped.</td></tr>
+</tbody></table></div>
+<p class="n">Other changes to the site: the page text was relabeled so that it does not suggest federal data feed any simulator (they do not); federal context cards were added to each Evidence tab with no model run; the codebook was frozen as version 0.3 on 2026-11-08 (frozen does not mean validated); audio overviews were added on 2026-11-08.</p>
+
+<h2 id="interop">Interoperability status</h2>
+<p>Each simulator's downloadable bundle contains a specification (Spec.json), a nine-sheet Excel workbook (saved values, no recalculation), figures and CSV files, a documentation PDF, and a prototype FHIR file with its definitions.</p>
+<ul>
+<li><strong>FHIR:</strong> the file is a prototype of the inputs and results with their provenance. This project has not validated it against a FHIR validator or tested it with any health-record system.</li>
+<li><strong>Python:</strong> each bundle includes a model written as code by the AI model. It is marked "not execution tested" and has not been compared with the page's results.</li>
+<li><strong>No API:</strong> this public site is static. It has no server, collects no data and runs no model in your browser.</li>
+</ul>
+
+<h2 id="refs">References</h2>
+<p>Each paper is open access under CC BY 4.0. Identifiers were taken from the article records used to build each simulator.</p>
+<div class="scroll"><table>
+<thead><tr><th>Paper</th><th>Identifiers</th></tr></thead>
+<tbody>
+<tr><td>Burden and well-being among dementia caregivers in Puerto Rico: the role of behavioral and psychological symptoms of dementia. <em>The Journals of Gerontology: Series B</em>, 2026.</td><td><a href="https://doi.org/10.1093/geronb/gbag014">doi:10.1093/geronb/gbag014</a> &middot; PMID 41645448 &middot; PMC13017666</td></tr>
+<tr><td>The burden among caregivers who are caring for patients with dementia admitted under private nursing services. <em>Frontiers in Dementia</em>, 2026.</td><td><a href="https://doi.org/10.3389/frdem.2026.1873575">doi:10.3389/frdem.2026.1873575</a> &middot; PMID 42798490 &middot; PMC13612328</td></tr>
+<tr><td>Medication process-related burden among informal caregivers of people with dementia: a nationwide cross-sectional survey in Germany. <em>BMC Health Services Research</em>, 2026.</td><td><a href="https://doi.org/10.1186/s12913-026-14325-4">doi:10.1186/s12913-026-14325-4</a> &middot; PMID 41832490 &middot; PMC13063673</td></tr>
+</tbody></table></div>
+<p><strong>Federal context cards</strong> (context only, not inputs): CDC Behavioral Risk Factor Surveillance System 2025 public-use file and codebook, and CDC NCHS public-use mortality files for 2022 to 2024, all downloaded on 2026-11-06. Each card on the Evidence tab gives its source, year, areas covered and limits.</p>
+<p class="n">The 15 draft burden categories come from codebook version 0.3. The codebook was reviewed with four language models, treated as opinions and not as evidence.</p>
+
+<h2 id="ai">AI use and independence</h2>
+<ul>
+<li>Code and page text were written with Claude Sonnet 5.5 (model ID claude-sonnet-5-5).</li>
+<li>The extraction step in the prototype called claude-sonnet-5, up to four times per paper.</li>
+<li>The audio overviews use Kokoro-82M, an open-source text-to-speech model, run locally. The scripts were written with Claude and checked by a person against the pages.</li>
+<li>The codebook was reviewed with Claude Opus 5.5, GPT, Grok and Gemini, as opinions only.</li>
+<li>A person made all design decisions and reviews the output.</li>
+</ul>
+<p>An independent project by DBbun LLC, adapted from its entry in the TOPx HHS Tech Sprint (Cost of Illness track), where DBbun was a Phase 1 winner and is participating in Phase 2. It is not endorsed by NIA, NIH or HHS.</p>
+
+<footer>&copy; DBbun LLC, Cambridge, MA &middot; <a href="https://dbbun.com">dbbun.com</a> &middot; Static page, no tracking.</footer>
+</div>
+</body>
+</html>
