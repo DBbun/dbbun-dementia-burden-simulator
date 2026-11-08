@@ -2,13 +2,15 @@
 
 **Open the demo: https://dbbun.github.io/dbbun-dementia-burden-simulator/**
 
-The demo is the website at the link above; the files in this repository are what that website is made of. Simulator library: https://dbbun.github.io/dbbun-dementia-burden-simulator/library.html
+The demo is the website at the link above; the files in this repository are what that website is made of. The main page is the simulator library (three draft simulators with Forecast, Sensitivity, Evidence and Export tabs). `about.html` is the short description page.
 
 An independent project by DBbun LLC, adapted from its entry in the TOPx HHS Tech Sprint (Cost of Illness track), where DBbun was a Phase 1 winner and is participating in Phase 2. It is not endorsed by, and does not use the logos of, NIA, NIH or HHS.
 
 Static pages describing a research prototype from DBbun LLC. Draft categories, not validated.
 
-- `index.html`: what the prototype does, draft categories, public federal data.
-- `library.html`: three draft simulators, each from one open-access (CC BY 4.0) dementia paper, with the checker's result for every finding. Drafts, not reviewed in full.
+- `index.html`, `static_shim.js`, `theme.css`: the simulator library (static; data are read from `data/`).
+- `about.html`: what the prototype does, draft categories.
+- `data/`: the three draft simulators (each from one CC BY 4.0 paper), references, and federal context cards (CDC BRFSS 2025, CDC NCHS deaths). Federal data are context only; they are not inputs to any simulator.
+- `library.html`: redirects to `index.html`.
 
-Contains no code that runs a model, no API keys, no full paper text (only short quoted sentences, with citations).
+Drafts, not validated. Contains no code that runs a model, no API keys, no full paper text (only short quoted sentences, with citations).

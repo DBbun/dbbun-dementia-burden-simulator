@@ -1,0 +1,40 @@
+{
+ "card_id": "brfss2025_cognitive_decline",
+ "title": "Adults 45 and over reporting memory or thinking difficulties that are happening more often or getting worse (BRFSS 2025)",
+ "summary": "In the 16 areas that asked the cognitive decline module, 19.2% of adults 45 and over (weighted) said that in the past 12 months they had difficulties with thinking or memory that were happening more often or getting worse: 15,184 of 74,780 answers (20.3% unweighted).",
+ "provenance": {
+  "source_type": "Federal telephone survey, self-report (CDC BRFSS, variable CIMEMLO1)",
+  "origin": "CDC Behavioral Risk Factor Surveillance System (BRFSS) 2025 public-use data file and codebook, downloaded from the CDC website by DBbun (SHA-256 of the data zip: be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734)",
+  "data_period": "2025",
+  "downloaded": "2026-11-06",
+  "reliability": "Self-reported survey; weighted percentage as published by CDC in the codebook; counts reproduced from the data file and matching the codebook."
+ },
+ "limits": [
+  "Self-report, not a diagnosis of dementia.",
+  "Not a national estimate: only 16 areas asked this module (CT, DE, GA, HI, IL, IN, KS, KY, MO, OR, PR, RI, TN, TX, WA, WI).",
+  "Different population from the paper."
+ ],
+ "data_table": [
+  [
+   "Measure",
+   "Value"
+  ],
+  [
+   "Answered yes (count)",
+   "15,184"
+  ],
+  [
+   "All answers (count)",
+   "74,780"
+  ],
+  [
+   "Percent yes, unweighted",
+   "20.30"
+  ],
+  [
+   "Percent yes, weighted (CDC codebook)",
+   "19.19"
+  ]
+ ],
+ "note": "Context only. Not an input to any simulator and not computed by an AI model."
+}

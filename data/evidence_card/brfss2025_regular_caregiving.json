@@ -1,0 +1,40 @@
+{
+ "card_id": "brfss2025_regular_caregiving",
+ "title": "Adults who gave regular care to a family member or friend (BRFSS 2025)",
+ "summary": "In the 27 areas that asked the caregiver module, 23.4% of adults (weighted) said that in the past 30 days they provided regular care or assistance to a friend or family member with a health problem or disability: 37,131 of 154,632 answers (24.0% unweighted).",
+ "provenance": {
+  "source_type": "Federal telephone survey, self-report (CDC BRFSS, variable CAREGIV1)",
+  "origin": "CDC Behavioral Risk Factor Surveillance System (BRFSS) 2025 public-use data file and codebook, downloaded from the CDC website by DBbun (SHA-256 of the data zip: be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734)",
+  "data_period": "2025",
+  "downloaded": "2026-11-06",
+  "reliability": "Self-reported survey; weighted percentage as published by CDC in the codebook; counts reproduced from the data file and matching the codebook."
+ },
+ "limits": [
+  "Not specific to dementia: the person cared for has any health problem or disability.",
+  "Not a national estimate: only 27 areas asked this module (AK, AL, AZ, DE, FL, HI, IA, ID, IN, KS, LA, MN, MO, MT, ND, NH, NM, OR, PA, PR, RI, SC, TN, TX, VT, WA, WV).",
+  "Different population from the paper: it counts all adults in those areas, not the paper’s sample."
+ ],
+ "data_table": [
+  [
+   "Measure",
+   "Value"
+  ],
+  [
+   "Answered yes (count)",
+   "37,131"
+  ],
+  [
+   "All answers in the 27 areas (count)",
+   "154,632"
+  ],
+  [
+   "Percent yes, unweighted",
+   "24.01"
+  ],
+  [
+   "Percent yes, weighted (CDC codebook)",
+   "23.40"
+  ]
+ ],
+ "note": "Context only. Not an input to any simulator and not computed by an AI model."
+}

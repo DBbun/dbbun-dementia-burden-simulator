@@ -1,0 +1,53 @@
+{
+ "card_id": "nchs_dementia_deaths_2022_2024",
+ "title": "Deaths with Alzheimer’s disease or dementia as the underlying cause, United States, 2022 to 2024 (CDC NCHS)",
+ "summary": "Death records with an underlying cause of Alzheimer’s disease (G30), vascular dementia (F01) or unspecified dementia (F03): 234,649 in 2022, 223,553 in 2023 and 224,680 in 2024.",
+ "provenance": {
+  "source_type": "Federal death records (NCHS public-use mortality files), counted by script",
+  "origin": "CDC National Center for Health Statistics (NCHS) public-use mortality files for 2022, 2023 and 2024 (death records)",
+  "data_period": "2022 to 2024",
+  "downloaded": "2026-11-06",
+  "reliability": "Counts of records by underlying cause. The code positions in the file were checked only by whether the counts look plausible, not against the official record layout."
+ },
+ "limits": [
+  "Death records, not people living with dementia.",
+  "Only the underlying cause is counted, so deaths where dementia was a contributing cause are missed.",
+  "The record-layout check against the official NCHS layout has not been done; 2016 to 2021 were not read.",
+  "Not about caregivers, and not from the paper’s sample."
+ ],
+ "data_table": [
+  [
+   "Year",
+   "Records",
+   "G30 Alzheimer’s",
+   "F01 vascular",
+   "F03 unspecified",
+   "G30+F01+F03"
+  ],
+  [
+   "2022",
+   "3,289,569",
+   "120,166",
+   "20,934",
+   "93,549",
+   "234,649"
+  ],
+  [
+   "2023",
+   "3,101,016",
+   "114,070",
+   "20,667",
+   "88,816",
+   "223,553"
+  ],
+  [
+   "2024",
+   "3,082,464",
+   "116,076",
+   "21,839",
+   "86,765",
+   "224,680"
+  ]
+ ],
+ "note": "Context only. Not an input to any simulator and not computed by an AI model."
+}

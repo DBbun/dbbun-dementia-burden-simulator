@@ -1,0 +1,40 @@
+{
+ "card_id": "brfss2025_caregiver_dementia",
+ "title": "Caregivers whose care recipient also has Alzheimer’s, dementia or another cognitive impairment (BRFSS 2025)",
+ "summary": "Among caregivers who answered the follow-up question in the 27 areas that asked, 14.5% (weighted) said the person they care for also has Alzheimer’s disease, dementia or another cognitive impairment disorder: 4,630 of 32,510 answers (14.2% unweighted).",
+ "provenance": {
+  "source_type": "Federal telephone survey, self-report (CDC BRFSS, variable CRGVALZD)",
+  "origin": "CDC Behavioral Risk Factor Surveillance System (BRFSS) 2025 public-use data file and codebook, downloaded from the CDC website by DBbun (SHA-256 of the data zip: be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734)",
+  "data_period": "2025",
+  "downloaded": "2026-11-06",
+  "reliability": "Self-reported survey; weighted percentage as published by CDC in the codebook; counts reproduced from the data file and matching the codebook."
+ },
+ "limits": [
+  "Asked only of caregivers, in 27 areas; not a national estimate.",
+  "The wording covers Alzheimer’s disease, dementia or another cognitive impairment, not dementia alone.",
+  "Different population from the paper."
+ ],
+ "data_table": [
+  [
+   "Measure",
+   "Value"
+  ],
+  [
+   "Answered yes (count)",
+   "4,630"
+  ],
+  [
+   "All answers (count)",
+   "32,510"
+  ],
+  [
+   "Percent yes, unweighted",
+   "14.24"
+  ],
+  [
+   "Percent yes, weighted (CDC codebook)",
+   "14.48"
+  ]
+ ],
+ "note": "Context only. Not an input to any simulator and not computed by an AI model."
+}
