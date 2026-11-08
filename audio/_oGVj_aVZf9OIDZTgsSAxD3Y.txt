@@ -1,0 +1,13 @@
+This is an audio overview of one draft simulator: Dementia Caregiver Burden, Hours, and Depressive Symptoms, from Puerto Rico. The voice is synthetic. It is Kokoro, an open-source text-to-speech model. This is an educational what-if model, not medical advice.
+
+The simulator is built from one open-access paper, published in The Journals of Gerontology, Series B, in twenty twenty-six. It is a survey of one hundred and one dementia caregivers in Puerto Rico, from the PREHCO Wave three study, collected in twenty twenty-one and twenty twenty-two.
+
+What the paper reports. Caregivers gave very high amounts of unpaid care. On average it was about one hundred hours a week, and about half of the caregivers reported more than one hundred hours a week. The paper also reports that higher caregiver burden went along with higher caregiver depressive symptoms, a correlation of zero point seven two. General social support did not weaken that link in this sample.
+
+What you can change. The simulator has five inputs: weekly caregiving hours, a standard full-time workweek used as a benchmark, a caregiver burden score on a zero to twenty-four scale, a count of the patient's behavioral and psychological symptoms, and the burden and depression correlation. It turns them into annual caregiving hours, hours above a full-time workweek, a depressive symptom score linked to a given burden level, and two scores shown as a percent of the maximum scale score.
+
+There are three ready-made scenarios. One sets weekly hours to sixty-seven and a half, a midpoint of the paper's thirty-five to one hundred hour bracket. One sets hours to one hundred, the paper's threshold for its highest group. The third swaps in a correlation of zero point five two, from the wider literature that the authors cite, to see how much the result depends on this sample's unusually strong link.
+
+What it cannot tell you. The paper reports no dollar costs, no income loss and no insurance or access-barrier data, so none appear here. The results are transformations of the paper's own numbers. They are not a cost estimate and not a causal effect, and they should not be generalized beyond this sample.
+
+Draft status. A script confirmed that the numbers and quotes occur in the paper. A person read the findings against the paper. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.

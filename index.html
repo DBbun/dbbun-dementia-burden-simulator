@@ -1399,7 +1399,7 @@ async function ensureAudioManifest(){
   return audioManifest;
 }
 document.addEventListener('play',e=>{document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause()})},true);
-const TOOL_AUDIO_LABELS={tool_home:'Audio overview of the whole tool: every feature, and the potential against the four criteria of the sprint',
+const TOOL_AUDIO_LABELS={tool_home:'Audio overview of the whole tool: what it is, every tab, and what it cannot do',
   tool_faq:'Audio overview of this FAQ page',tool_admin:'Audio overview of the Administrator tab (full tool only)',
   tool_supporting:'Audio overview of the supporting documents'};
 function fillToolAudio(){

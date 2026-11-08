@@ -1,0 +1,13 @@
+This is an audio overview of one draft simulator: Dementia Caregiver Burden in Qatar's Private Nursing Services program, measured with the Zarit Burden Interview. The voice is synthetic. It is Kokoro, an open-source text-to-speech model. This is an educational what-if model, not medical advice.
+
+The simulator is built from one open-access paper, published in Frontiers in Dementia in twenty twenty-six. It is a survey of one hundred and one caregivers of dementia patients in a nursing program at Hamad Medical Corporation. That is sixty-nine point one percent of the one hundred and forty-six caregivers who were approached.
+
+The Zarit Burden Interview has twenty-two items and is scored from zero to eighty-eight. Higher means more burden. The average score was about forty-three. Thirty-six point six percent of caregivers were in the moderate-to-severe range, and eighteen point eight percent were in the severe range.
+
+Two differences were statistically significant in this sample. Spousal caregivers more often had severe burden, about thirty-seven percent, and caregivers with less formal education more often had higher burden. Caregiver gender and hours of care per day were not significantly associated with burden. Those non-significant findings stay visible in the simulator rather than being implied away.
+
+What you can change. The six inputs are the mean score, the moderate-to-severe rate, the severe rate, the severe rate among spousal caregivers, and the minimal-burden rates for graduate-educated and secondary-educated caregivers. The three ready-made scenarios swap in the spousal severe rate, the secondary-education pattern, and the graduate-education pattern, so you can see the gaps between groups.
+
+What it cannot tell you. It is a burden-score study, not a cost study. The paper reports no dollar costs, income loss, diagnostic delay or access-barrier data. It comes from one program in one country and should not be generalized nationally or pooled with other countries' studies. The paper also contains an inconsistency in its own caregiving-duration figures, five point six years in the text and two point six in a table, which it does not resolve.
+
+Draft status. A script confirmed the numbers and quotes occur in the paper, and a person read the findings against it. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.

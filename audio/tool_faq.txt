@@ -1,0 +1,19 @@
+This is an audio overview of the Frequently Asked Questions page of the DBbun Dementia Burden Simulator. The voice is synthetic. It is Kokoro, an open-source text-to-speech model.
+
+The page begins with the tabs of a simulator. Operation Flow shows how a simulator was made. For dementia, the federal data step is not used. Explore is the interactive core. A scenario is a ready-made set of changed inputs with a one-sentence goal. It is not a prediction. It shows what the model does when those assumptions are true.
+
+An input is one number the model starts from. It is labeled observed, assumed, or projected. The test range for an input is an exploration bound, not evidence. If you move an input outside what the paper supports, that is your own assumption.
+
+Forecast projects one result forward in time, but only where the paper reports a rate per period. It assumes the rate repeats unchanged, so the line is straight. The bands are labeled illustrative and are not confidence intervals. Many simulators have no forecast, and that is correct.
+
+Sensitivity moves one input at a time across its supported range and ranks the inputs by their effect. It is a stress test of the model's own assumptions, not a measure of real-world uncertainty.
+
+Evidence and Sources is the audit. For dementia, the paper-versus-federal chart is empty, because no such comparison has been computed. The federal cards on that tab are context only, and federal data never supply a simulator's numbers.
+
+Export lets you download one bundle with the documentation, an Excel workbook, figures, the specification, the model as Python code, and a prototype FHIR file. The Excel workbook holds saved values and does not recalculate.
+
+The page also explains how each simulator was made and what it cost. Model fees were about forty-two cents for the Puerto Rico paper and about fifty-four cents each for the Qatar and German papers. A script checked that every extracted number and quoted sentence occurs in the paper. That check shows only that the figure appears in the text, not that its label is right, so a person read the findings and corrected or removed mislabeled items.
+
+The burden categories group results. They do not split a burden into shares that add up, so do not add numbers across categories.
+
+Finally, the simulator does not recommend or evaluate treatments, and it does not tell anyone what to do about their own health. For care decisions, talk with a clinician.

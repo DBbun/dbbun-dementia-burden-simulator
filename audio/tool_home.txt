@@ -1,0 +1,15 @@
+This is an audio overview of the DBbun Dementia Burden Simulator. You are hearing a synthetic voice, not a person. The voice is Kokoro, an open-source text-to-speech model, and the script was written with Claude and checked by a person against the pages it describes.
+
+First, what this is. It is a research prototype from DBbun LLC, in Cambridge, Massachusetts. It is an independent project adapted from DBbun's earlier entry in the TOPx HHS Tech Sprint, a different federal challenge about Lyme disease and Long COVID. It is not endorsed by the National Institute on Aging, NIH, or HHS.
+
+Each simulator on the main page starts from one published, open-access dementia paper. A language model reads the paper and proposes the findings and a small what-if model. A script then checks that every number and every quoted sentence really occurs in the paper's text. A person read the findings against the papers and corrected or removed the ones that were mislabeled. Right now there are three simulators, all marked as drafts.
+
+What it is not. It is not a calculator for your own situation. It is not a validated measure, and it is not medical advice. Nothing here has been reviewed by a clinician or an ethics board.
+
+Open any simulator and you will find tabs. Operation Flow shows how that simulator was made, step by step, including the model calls and their cost. Explore is the interactive part. You can pick a ready-made scenario or type your own numbers, and the results recalculate right away in your browser by ordinary arithmetic. Nothing you type is saved or sent anywhere. Forecast appears only where a paper reports a rate per period. Sensitivity moves one input at a time to show which assumptions matter most. Evidence and Sources is the audit. Export lets you download a bundle with a documentation file, an Excel workbook, the data, and the model as Python code.
+
+Every number is labeled observed, assumed, or projected. Observed means the paper reported it. Assumed means an assumption was added to make a what-if possible. Projected means a straight-line continuation of a reported rate, which is a reading aid and not a prediction.
+
+About federal data. No federal data feed any of these simulators. The Evidence tab shows four federal context cards: three from the CDC's Behavioral Risk Factor Surveillance System survey for twenty twenty-five, and one from CDC death records. They describe different populations from the papers, the survey questions were asked in only some areas of the country, and no comparison between a paper and the federal figures has been computed. They are there for context only.
+
+What is still open. The categories of burden come from a draft codebook that was frozen on November eighth, twenty twenty-six, for a pilot test. Frozen does not mean validated. The pilot has not been run yet. Please treat everything here as a draft.

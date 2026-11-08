@@ -1,0 +1,13 @@
+This is an audio overview of one draft simulator: Dementia Caregiver Medication-Process Burden, from a German survey. The voice is synthetic. It is Kokoro, an open-source text-to-speech model. This is an educational what-if model, not medical advice.
+
+The simulator is built from one open-access paper, published in BMC Health Services Research in twenty twenty-six. It is a nationwide cross-sectional survey of one hundred and eighty family caregivers of people with dementia in Germany. The caregivers were recruited through dementia self-help groups, so the results should not be generalized beyond them.
+
+The paper asks how burdensome the tasks around the patient's medicines are. Tasks that involve people were rated as very burdensome by far more caregivers than logistical tasks. Explaining medication information to the patient was rated highly burdensome by about twenty-seven percent. Accompanying the patient to appointments was about twenty percent, and reminding the patient to take medication was about eighteen percent. By contrast, obtaining medicines from the pharmacy was about four percent, and preparing doses was about six percent.
+
+Community nurse support reached about thirty-eight percent of caregivers. In this survey it was not associated with a statistically significant difference in general caregiver burden or in medication-process burden. About seventy-four percent of caregivers rated fast pharmacy service as very important.
+
+What you can change. The eight inputs are the five task-burden percentages, the general burden score on the short form of the Zarit Burden Interview, nurse-support coverage, and the importance of fast pharmacy service. The two ready-made scenarios set nurse-support coverage to one hundred percent and to zero percent. These are illustrative bounds, not reported figures. They show the comparison behind the paper's null finding, not a predicted effect of nurse support.
+
+What it cannot tell you. The paper reports no costs, no caregiving hours, no income loss and no federal data. It cannot support cost-effectiveness or budget conclusions.
+
+Draft status. A script confirmed the numbers and quotes occur in the paper. A person read the findings against the paper, and some mislabeled items were corrected or removed. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.
