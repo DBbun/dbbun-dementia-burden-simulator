@@ -1,0 +1,33 @@
+SOURCE: cdc/brfss_2025/LLCP2025ASC.zip :: BRFSS_2025_cognitive_decline_module
+SHA-256: be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734
+CONDITION SCOPE: dementia
+ROLE: self_reported_cognitive_change_context_not_diagnosis
+
+PROCESSING AND INTERPRETATION STATUS
+Derived summary computed by script from a public federal file. Calculated findings are separate from any extracted passages. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+WHAT THIS FILE ESTABLISHES
+The 2025 BRFSS cognitive decline module (adults 45 and over) was answered in 16 areas (CT, DE, GA, HI, IL, IN, KS, KY, MO, OR, RI, TN, TX, WA, WI, PR). It asks about memory or thinking difficulties that are happening more often or getting worse, and follow-up items about worry, talking to a provider, giving up chores and interference with work or social life.
+
+DECISION BOUNDARY
+Not a national estimate. Self-report: this is not a dementia diagnosis and does not count people with dementia. Follow-up items are asked only of those who said yes to the first item.
+
+TRACEABLE FINDINGS
+f1: Adults 45 and over with difficulties with thinking or memory that are happening more often or getting worse in the past 12 months (all asking areas) = 19.48 percent, weighted, of valid answers [BRFSS 2025 CIMEMLO1; n valid 73,566, n yes 15,184; approx 95% CI 18.88 to 20.08 (Taylor, file strata and PSU)]
+f2: Of those, share worried about these difficulties (all asking areas) = 57.91 percent, weighted, of valid answers [BRFSS 2025 CDWORRY; n valid 15,042, n yes 8,377; approx 95% CI 56.31 to 59.51 (Taylor, file strata and PSU)]
+f3: Of those, share who discussed the difficulties with a health care provider (all asking areas) = 42.83 percent, weighted, of valid answers [BRFSS 2025 CDDISCU1; n valid 15,081, n yes 6,690; approx 95% CI 41.16 to 44.5 (Taylor, file strata and PSU)]
+f4: Of those, share who gave up day-to-day chores because of the difficulties (all asking areas) = 36.76 percent, weighted, of valid answers [BRFSS 2025 CDHOUS1; n valid 15,043, n yes 4,945; approx 95% CI 35.08 to 38.44 (Taylor, file strata and PSU)]
+f5: Of those, share for whom the difficulties interfere with work or social activities (all asking areas) = 23.91 percent, weighted, of valid answers [BRFSS 2025 CDSOCIA1; n valid 14,937, n yes 3,219; approx 95% CI 22.39 to 25.44 (Taylor, file strata and PSU)]
+f6: Adults 45 and over with difficulties with thinking or memory that are happening more often or getting worse in the past 12 months (Puerto Rico) = 8.28 percent, weighted, of valid answers [BRFSS 2025 CIMEMLO1; n valid 2,453, n yes 211; approx 95% CI 6.67 to 9.89 (Taylor, file strata and PSU)]
+f7: Of those, share worried about these difficulties (Puerto Rico) = 91.74 percent, weighted, of valid answers [BRFSS 2025 CDWORRY; n valid 210, n yes 192; approx 95% CI 87.18 to 96.29 (Taylor, file strata and PSU)]
+f8: Of those, share who discussed the difficulties with a health care provider (Puerto Rico) = 63.09 percent, weighted, of valid answers [BRFSS 2025 CDDISCU1; n valid 211, n yes 131; approx 95% CI 53.82 to 72.36 (Taylor, file strata and PSU)]
+f9: Of those, share who gave up day-to-day chores because of the difficulties (Puerto Rico) = 54.25 percent, weighted, of valid answers [BRFSS 2025 CDHOUS1; n valid 208, n yes 100; approx 95% CI 44.57 to 63.94 (Taylor, file strata and PSU)]
+f10: Of those, share for whom the difficulties interfere with work or social activities (Puerto Rico) = 38.66 percent, weighted, of valid answers [BRFSS 2025 CDSOCIA1; n valid 208, n yes 65; approx 95% CI 28.6 to 48.73 (Taylor, file strata and PSU)]
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No dollar costs, caregiver outcomes or diagnosis status. Age-specific estimates are not computed here.
+
+DO NOT USE FOR
+Treating a federal figure as the simulator's own input, comparing it with a paper whose population, definition or period differs without saying so, or filling absent costs or effects with invented values.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

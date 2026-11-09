@@ -11,7 +11,7 @@ Static pages describing a research prototype from DBbun LLC. Draft categories, n
 - `index.html`, `static_shim.js`, `theme.css`: the simulator library (static; data are read from `data/`).
 - `docs.html`: supporting documents (quality log, corrections, interoperability status, references, AI use).
 - `about.html`: what the prototype does, draft categories.
-- `data/`: the three draft simulators (each from one CC BY 4.0 paper), references, and federal context cards (CDC BRFSS 2025, CDC NCHS deaths). Federal data are context only; they are not inputs to any simulator.
+- `data/`: the three draft simulators (each from one CC BY 4.0 paper), references, and federal context cards (CDC BRFSS 2025, CDC NCHS deaths). Federal data are context only; they are not inputs to any simulator and were not offered to the AI model. `data/federal_units` holds three derived summaries (BRFSS caregiver items, BRFSS cognitive-decline items, NCHS dementia deaths 2022 to 2024) that code uses for one comparison, on the Puerto Rico simulator. No raw federal records are in this repository.
 - `library.html`: redirects to `index.html`.
 
 Drafts, not validated. Contains no code that runs a model, no API keys, no full paper text (only short quoted sentences, with citations).

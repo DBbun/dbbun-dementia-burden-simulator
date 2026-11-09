@@ -1,0 +1,118 @@
+{
+ "knowledge_version": 5,
+ "policy": "evidence_only_no_scenario_assumptions",
+ "source": {
+  "raw_file_id": "cdc_nchs/mortality_2016_2024/mort2022us.zip, mort2023us.zip, mort2024us.zip",
+  "sha256": "ed56fc2403746dcdff19e3d5e61ea43fa23ffb92c16de26f0d1e2fb5a8cea4d2;d181d0e12fea6b2f7f3138f0426f829b890d6dc8d6626ff37a032ffc87fc932d;7f61a343a5c014d66cb028425cb2b849d96af9156abf0b6d054a7cb23ee630e2",
+  "dataset_key": "cdc_nchs/mortality_2022_2024_dementia",
+  "name": "NCHS_mortality_2022_2024_dementia"
+ },
+ "review_unit_id": "cdc_nchs/mortality_2022_2024_dementia::nchs_dementia_deaths_2022_2024",
+ "scientific_review": "not_independently_reviewed",
+ "runtime": {
+  "allowed_artifacts": [
+   "txt",
+   "json"
+  ],
+  "raw_retrieval_allowed": false,
+  "live_federal_search": false
+ },
+ "facts": [
+  {
+   "id": "f1",
+   "label": "Deaths with Alzheimer's disease (G30) as underlying cause, 2022",
+   "value": 120166,
+   "unit": "death records",
+   "source_locator": "NCHS mort2022us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2022 layout); file SHA-256 ed56fc2403746dcdff19e3d5e61ea43fa23ffb92c16de26f0d1e2fb5a8cea4d2",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f2",
+   "label": "Deaths with vascular dementia (F01) as underlying cause, 2022",
+   "value": 20934,
+   "unit": "death records",
+   "source_locator": "NCHS mort2022us positions 146-149 exactly F01",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f3",
+   "label": "Deaths with unspecified dementia (F03) as underlying cause, 2022",
+   "value": 93549,
+   "unit": "death records",
+   "source_locator": "NCHS mort2022us positions 146-149 exactly F03",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f4",
+   "label": "All death records, 2022",
+   "value": 3289569,
+   "unit": "death records",
+   "source_locator": "NCHS mort2022us full decompressed file count",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f5",
+   "label": "Deaths with Alzheimer's disease (G30) as underlying cause, 2023",
+   "value": 114070,
+   "unit": "death records",
+   "source_locator": "NCHS mort2023us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2023 layout); file SHA-256 d181d0e12fea6b2f7f3138f0426f829b890d6dc8d6626ff37a032ffc87fc932d",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f6",
+   "label": "Deaths with vascular dementia (F01) as underlying cause, 2023",
+   "value": 20667,
+   "unit": "death records",
+   "source_locator": "NCHS mort2023us positions 146-149 exactly F01",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f7",
+   "label": "Deaths with unspecified dementia (F03) as underlying cause, 2023",
+   "value": 88816,
+   "unit": "death records",
+   "source_locator": "NCHS mort2023us positions 146-149 exactly F03",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f8",
+   "label": "All death records, 2023",
+   "value": 3101016,
+   "unit": "death records",
+   "source_locator": "NCHS mort2023us full decompressed file count",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f9",
+   "label": "Deaths with Alzheimer's disease (G30) as underlying cause, 2024",
+   "value": 116076,
+   "unit": "death records",
+   "source_locator": "NCHS mort2024us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2024 layout); file SHA-256 7f61a343a5c014d66cb028425cb2b849d96af9156abf0b6d054a7cb23ee630e2",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f10",
+   "label": "Deaths with vascular dementia (F01) as underlying cause, 2024",
+   "value": 21839,
+   "unit": "death records",
+   "source_locator": "NCHS mort2024us positions 146-149 exactly F01",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f11",
+   "label": "Deaths with unspecified dementia (F03) as underlying cause, 2024",
+   "value": 86765,
+   "unit": "death records",
+   "source_locator": "NCHS mort2024us positions 146-149 exactly F03",
+   "evidence_status": "derived"
+  },
+  {
+   "id": "f12",
+   "label": "All death records, 2024",
+   "value": 3082464,
+   "unit": "death records",
+   "source_locator": "NCHS mort2024us full decompressed file count",
+   "evidence_status": "derived"
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "knowledge_version": 5,
+ "policy": "evidence_only_no_scenario_assumptions",
+ "source": {
+  "raw_file_id": "cdc/brfss_2025/LLCP2025ASC.zip",
+  "sha256": "be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734",
+  "dataset_key": "cdc/brfss_2025_caregiver",
+  "name": "BRFSS_2025_caregiver_module"
+ },
+ "review_unit_id": "cdc/brfss_2025_caregiver::brfss2025_caregiver",
+ "scientific_review": "not_independently_reviewed",
+ "runtime": {
+  "allowed_artifacts": [
+   "txt",
+   "json"
+  ],
+  "raw_retrieval_allowed": false,
+  "live_federal_search": false
+ },
+ "facts": [
+  {
+   "id": "f1",
+   "label": "Adults who provided regular care or assistance to a friend or family member with a health problem or disability in the past 30 days (all asking areas)",
+   "value": 23.52,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CAREGIV1; n valid 154,035, n yes 37,131; approx 95% CI 23.03 to 24.01 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CAREGIV1",
+   "n_valid": 154035,
+   "ci95_approx": [
+    23.03,
+    24.01
+   ]
+  },
+  {
+   "id": "f2",
+   "label": "Caregivers whose care recipient also has Alzheimer's disease, dementia or another cognitive impairment disorder (all asking areas)",
+   "value": 14.92,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVALZD; n valid 31,479, n yes 4,630; approx 95% CI 14.02 to 15.83 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVALZD",
+   "n_valid": 31479,
+   "ci95_approx": [
+    14.02,
+    15.83
+   ]
+  },
+  {
+   "id": "f3",
+   "label": "Caregivers of a person with Alzheimer's or dementia who give 40 or more hours of care in an average week (all asking areas)",
+   "value": 28.79,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVHRS2; n valid 4,531, n yes 1,185; approx 95% CI 25.86 to 31.73 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVHRS2",
+   "n_valid": 4531,
+   "ci95_approx": [
+    25.86,
+    31.73
+   ]
+  },
+  {
+   "id": "f4",
+   "label": "Caregivers of a person with Alzheimer's or dementia who give 20 or more hours of care in an average week (all asking areas)",
+   "value": 47.09,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVHRS2; n valid 4,531, n yes 1,905; approx 95% CI 43.84 to 50.35 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVHRS2",
+   "n_valid": 4531,
+   "ci95_approx": [
+    43.84,
+    50.35
+   ]
+  },
+  {
+   "id": "f5",
+   "label": "Caregivers of a person with Alzheimer's or dementia who have given care for 5 years or more (all asking areas)",
+   "value": 35.68,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVLNG2; n valid 4,536, n yes 1,584; approx 95% CI 32.79 to 38.58 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVLNG2",
+   "n_valid": 4536,
+   "ci95_approx": [
+    32.79,
+    38.58
+   ]
+  },
+  {
+   "id": "f6",
+   "label": "Caregivers whose care recipient is a spouse or partner (all caregivers) (all asking areas)",
+   "value": 20.31,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVREL5; n valid 34,741, n yes 8,582; approx 95% CI 19.41 to 21.21 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVREL5",
+   "n_valid": 34741,
+   "ci95_approx": [
+    19.41,
+    21.21
+   ]
+  },
+  {
+   "id": "f7",
+   "label": "Adults who provided regular care or assistance to a friend or family member with a health problem or disability in the past 30 days (Puerto Rico)",
+   "value": 15.49,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CAREGIV1; n valid 3,716, n yes 645; approx 95% CI 13.45 to 17.54 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CAREGIV1",
+   "n_valid": 3716,
+   "ci95_approx": [
+    13.45,
+    17.54
+   ]
+  },
+  {
+   "id": "f8",
+   "label": "Caregivers whose care recipient also has Alzheimer's disease, dementia or another cognitive impairment disorder (Puerto Rico)",
+   "value": 20.88,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVALZD; n valid 500, n yes 85; approx 95% CI 16.51 to 25.24 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVALZD",
+   "n_valid": 500,
+   "ci95_approx": [
+    16.51,
+    25.24
+   ]
+  },
+  {
+   "id": "f9",
+   "label": "Caregivers of a person with Alzheimer's or dementia who give 40 or more hours of care in an average week (Puerto Rico)",
+   "value": 57.05,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVHRS2; n valid 85, n yes 37; approx 95% CI 44.9 to 69.21 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVHRS2",
+   "n_valid": 85,
+   "ci95_approx": [
+    44.9,
+    69.21
+   ]
+  },
+  {
+   "id": "f10",
+   "label": "Caregivers of a person with Alzheimer's or dementia who give 20 or more hours of care in an average week (Puerto Rico)",
+   "value": 67.63,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVHRS2; n valid 85, n yes 55; approx 95% CI 54.15 to 81.1 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVHRS2",
+   "n_valid": 85,
+   "ci95_approx": [
+    54.15,
+    81.1
+   ]
+  },
+  {
+   "id": "f11",
+   "label": "Caregivers of a person with Alzheimer's or dementia who have given care for 5 years or more (Puerto Rico)",
+   "value": 56.76,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVLNG2; n valid 85, n yes 29; approx 95% CI 45.14 to 68.39 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVLNG2",
+   "n_valid": 85,
+   "ci95_approx": [
+    45.14,
+    68.39
+   ]
+  },
+  {
+   "id": "f12",
+   "label": "Caregivers whose care recipient is a spouse or partner (all caregivers) (Puerto Rico)",
+   "value": 14.42,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CRGVREL5; n valid 594, n yes 77; approx 95% CI 5.32 to 23.53 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CRGVREL5",
+   "n_valid": 594,
+   "ci95_approx": [
+    5.32,
+    23.53
+   ]
+  }
+ ]
+}

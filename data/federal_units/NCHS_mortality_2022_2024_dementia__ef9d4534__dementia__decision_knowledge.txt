@@ -1,0 +1,35 @@
+SOURCE: cdc_nchs/mortality_2016_2024/mort2022us.zip, mort2023us.zip, mort2024us.zip :: NCHS_mortality_2022_2024_dementia
+SHA-256: ed56fc2403746dcdff19e3d5e61ea43fa23ffb92c16de26f0d1e2fb5a8cea4d2;d181d0e12fea6b2f7f3138f0426f829b890d6dc8d6626ff37a032ffc87fc932d;7f61a343a5c014d66cb028425cb2b849d96af9156abf0b6d054a7cb23ee630e2
+CONDITION SCOPE: dementia
+ROLE: mortality_context_not_prevalence_not_cost
+
+PROCESSING AND INTERPRETATION STATUS
+Derived summary computed by script from a public federal file. Calculated findings are separate from any extracted passages. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+WHAT THIS FILE ESTABLISHES
+Counts of U.S. death records whose underlying cause is Alzheimer's disease (G30), vascular dementia (F01) or unspecified dementia (F03), for 2022, 2023 and 2024. The underlying-cause field is positions 146-149 in the official layout (2021 to 2024 documentation).
+
+DECISION BOUNDARY
+Death records, not people living with dementia. Only the underlying cause is counted, so deaths where dementia was a contributing cause are missed. Not a measure of caregiving, cost or nonfatal burden. The F01 and F03 codes may be used differently by certifiers, so changes from year to year are not explained here.
+
+TRACEABLE FINDINGS
+f1: Deaths with Alzheimer's disease (G30) as underlying cause, 2022 = 120166 death records [NCHS mort2022us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2022 layout); file SHA-256 ed56fc2403746dcdff19e3d5e61ea43fa23ffb92c16de26f0d1e2fb5a8cea4d2]
+f2: Deaths with vascular dementia (F01) as underlying cause, 2022 = 20934 death records [NCHS mort2022us positions 146-149 exactly F01]
+f3: Deaths with unspecified dementia (F03) as underlying cause, 2022 = 93549 death records [NCHS mort2022us positions 146-149 exactly F03]
+f4: All death records, 2022 = 3289569 death records [NCHS mort2022us full decompressed file count]
+f5: Deaths with Alzheimer's disease (G30) as underlying cause, 2023 = 114070 death records [NCHS mort2023us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2023 layout); file SHA-256 d181d0e12fea6b2f7f3138f0426f829b890d6dc8d6626ff37a032ffc87fc932d]
+f6: Deaths with vascular dementia (F01) as underlying cause, 2023 = 20667 death records [NCHS mort2023us positions 146-149 exactly F01]
+f7: Deaths with unspecified dementia (F03) as underlying cause, 2023 = 88816 death records [NCHS mort2023us positions 146-149 exactly F03]
+f8: All death records, 2023 = 3101016 death records [NCHS mort2023us full decompressed file count]
+f9: Deaths with Alzheimer's disease (G30) as underlying cause, 2024 = 116076 death records [NCHS mort2024us underlying cause, positions 146-149 exactly G30 (position confirmed in the official 2024 layout); file SHA-256 7f61a343a5c014d66cb028425cb2b849d96af9156abf0b6d054a7cb23ee630e2]
+f10: Deaths with vascular dementia (F01) as underlying cause, 2024 = 21839 death records [NCHS mort2024us positions 146-149 exactly F01]
+f11: Deaths with unspecified dementia (F03) as underlying cause, 2024 = 86765 death records [NCHS mort2024us positions 146-149 exactly F03]
+f12: All death records, 2024 = 3082464 death records [NCHS mort2024us full decompressed file count]
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Multiple-cause (any-listed) dementia deaths, age and sex detail, and years 2016 to 2021 are not analyzed here.
+
+DO NOT USE FOR
+Treating a federal figure as the simulator's own input, comparing it with a paper whose population, definition or period differs without saying so, or filling absent costs or effects with invented values.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

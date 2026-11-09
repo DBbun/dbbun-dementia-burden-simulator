@@ -1,0 +1,162 @@
+{
+ "knowledge_version": 5,
+ "policy": "evidence_only_no_scenario_assumptions",
+ "source": {
+  "raw_file_id": "cdc/brfss_2025/LLCP2025ASC.zip",
+  "sha256": "be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734",
+  "dataset_key": "cdc/brfss_2025_cognitive",
+  "name": "BRFSS_2025_cognitive_decline_module"
+ },
+ "review_unit_id": "cdc/brfss_2025_cognitive::brfss2025_cognitive",
+ "scientific_review": "not_independently_reviewed",
+ "runtime": {
+  "allowed_artifacts": [
+   "txt",
+   "json"
+  ],
+  "raw_retrieval_allowed": false,
+  "live_federal_search": false
+ },
+ "facts": [
+  {
+   "id": "f1",
+   "label": "Adults 45 and over with difficulties with thinking or memory that are happening more often or getting worse in the past 12 months (all asking areas)",
+   "value": 19.48,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CIMEMLO1; n valid 73,566, n yes 15,184; approx 95% CI 18.88 to 20.08 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CIMEMLO1",
+   "n_valid": 73566,
+   "ci95_approx": [
+    18.88,
+    20.08
+   ]
+  },
+  {
+   "id": "f2",
+   "label": "Of those, share worried about these difficulties (all asking areas)",
+   "value": 57.91,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDWORRY; n valid 15,042, n yes 8,377; approx 95% CI 56.31 to 59.51 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDWORRY",
+   "n_valid": 15042,
+   "ci95_approx": [
+    56.31,
+    59.51
+   ]
+  },
+  {
+   "id": "f3",
+   "label": "Of those, share who discussed the difficulties with a health care provider (all asking areas)",
+   "value": 42.83,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDDISCU1; n valid 15,081, n yes 6,690; approx 95% CI 41.16 to 44.5 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDDISCU1",
+   "n_valid": 15081,
+   "ci95_approx": [
+    41.16,
+    44.5
+   ]
+  },
+  {
+   "id": "f4",
+   "label": "Of those, share who gave up day-to-day chores because of the difficulties (all asking areas)",
+   "value": 36.76,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDHOUS1; n valid 15,043, n yes 4,945; approx 95% CI 35.08 to 38.44 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDHOUS1",
+   "n_valid": 15043,
+   "ci95_approx": [
+    35.08,
+    38.44
+   ]
+  },
+  {
+   "id": "f5",
+   "label": "Of those, share for whom the difficulties interfere with work or social activities (all asking areas)",
+   "value": 23.91,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDSOCIA1; n valid 14,937, n yes 3,219; approx 95% CI 22.39 to 25.44 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDSOCIA1",
+   "n_valid": 14937,
+   "ci95_approx": [
+    22.39,
+    25.44
+   ]
+  },
+  {
+   "id": "f6",
+   "label": "Adults 45 and over with difficulties with thinking or memory that are happening more often or getting worse in the past 12 months (Puerto Rico)",
+   "value": 8.28,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CIMEMLO1; n valid 2,453, n yes 211; approx 95% CI 6.67 to 9.89 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CIMEMLO1",
+   "n_valid": 2453,
+   "ci95_approx": [
+    6.67,
+    9.89
+   ]
+  },
+  {
+   "id": "f7",
+   "label": "Of those, share worried about these difficulties (Puerto Rico)",
+   "value": 91.74,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDWORRY; n valid 210, n yes 192; approx 95% CI 87.18 to 96.29 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDWORRY",
+   "n_valid": 210,
+   "ci95_approx": [
+    87.18,
+    96.29
+   ]
+  },
+  {
+   "id": "f8",
+   "label": "Of those, share who discussed the difficulties with a health care provider (Puerto Rico)",
+   "value": 63.09,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDDISCU1; n valid 211, n yes 131; approx 95% CI 53.82 to 72.36 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDDISCU1",
+   "n_valid": 211,
+   "ci95_approx": [
+    53.82,
+    72.36
+   ]
+  },
+  {
+   "id": "f9",
+   "label": "Of those, share who gave up day-to-day chores because of the difficulties (Puerto Rico)",
+   "value": 54.25,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDHOUS1; n valid 208, n yes 100; approx 95% CI 44.57 to 63.94 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDHOUS1",
+   "n_valid": 208,
+   "ci95_approx": [
+    44.57,
+    63.94
+   ]
+  },
+  {
+   "id": "f10",
+   "label": "Of those, share for whom the difficulties interfere with work or social activities (Puerto Rico)",
+   "value": 38.66,
+   "unit": "percent, weighted, of valid answers",
+   "source_locator": "BRFSS 2025 CDSOCIA1; n valid 208, n yes 65; approx 95% CI 28.6 to 48.73 (Taylor, file strata and PSU)",
+   "evidence_status": "derived",
+   "detail": "CDSOCIA1",
+   "n_valid": 208,
+   "ci95_approx": [
+    28.6,
+    48.73
+   ]
+  }
+ ]
+}

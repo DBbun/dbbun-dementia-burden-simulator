@@ -1,0 +1,35 @@
+SOURCE: cdc/brfss_2025/LLCP2025ASC.zip :: BRFSS_2025_caregiver_module
+SHA-256: be4a9f167480b1ad788640e21d8b265660c12c87d54c121839c746f29d8fb734
+CONDITION SCOPE: dementia
+ROLE: self_reported_caregiving_context_not_cost
+
+PROCESSING AND INTERPRETATION STATUS
+Derived summary computed by script from a public federal file. Calculated findings are separate from any extracted passages. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+WHAT THIS FILE ESTABLISHES
+The 2025 BRFSS caregiver module was answered in 27 areas (AL, AK, AZ, DE, FL, HI, ID, IN, IA, KS, LA, MN, MO, MT, NH, NM, ND, OR, PA, RI, SC, TN, TX, VT, WA, WV, PR). It counts adults who provided regular care in the past 30 days, and asks caregivers what health problem the person has, how many hours a week, how long, and which tasks. Weighted percentages are computed from the public file with the final weight and are shown for all asking areas and for Puerto Rico alone, with approximate standard errors. Hours are in three bands only (under 20, 20 to 39, 40 or more per week).
+
+DECISION BOUNDARY
+Not a national estimate: only the listed areas asked the module. Self-report, not a diagnosis. The hours bands are 40 or more, 20 to 39 and under 20; they cannot be compared with a paper that reports mean hours or a different cut point without saying so. No dollar costs, income loss or access barriers are measured. The Puerto Rico dementia-caregiver subset is small; read the interval, not the point value.
+
+TRACEABLE FINDINGS
+f1: Adults who provided regular care or assistance to a friend or family member with a health problem or disability in the past 30 days (all asking areas) = 23.52 percent, weighted, of valid answers [BRFSS 2025 CAREGIV1; n valid 154,035, n yes 37,131; approx 95% CI 23.03 to 24.01 (Taylor, file strata and PSU)]
+f2: Caregivers whose care recipient also has Alzheimer's disease, dementia or another cognitive impairment disorder (all asking areas) = 14.92 percent, weighted, of valid answers [BRFSS 2025 CRGVALZD; n valid 31,479, n yes 4,630; approx 95% CI 14.02 to 15.83 (Taylor, file strata and PSU)]
+f3: Caregivers of a person with Alzheimer's or dementia who give 40 or more hours of care in an average week (all asking areas) = 28.79 percent, weighted, of valid answers [BRFSS 2025 CRGVHRS2; n valid 4,531, n yes 1,185; approx 95% CI 25.86 to 31.73 (Taylor, file strata and PSU)]
+f4: Caregivers of a person with Alzheimer's or dementia who give 20 or more hours of care in an average week (all asking areas) = 47.09 percent, weighted, of valid answers [BRFSS 2025 CRGVHRS2; n valid 4,531, n yes 1,905; approx 95% CI 43.84 to 50.35 (Taylor, file strata and PSU)]
+f5: Caregivers of a person with Alzheimer's or dementia who have given care for 5 years or more (all asking areas) = 35.68 percent, weighted, of valid answers [BRFSS 2025 CRGVLNG2; n valid 4,536, n yes 1,584; approx 95% CI 32.79 to 38.58 (Taylor, file strata and PSU)]
+f6: Caregivers whose care recipient is a spouse or partner (all caregivers) (all asking areas) = 20.31 percent, weighted, of valid answers [BRFSS 2025 CRGVREL5; n valid 34,741, n yes 8,582; approx 95% CI 19.41 to 21.21 (Taylor, file strata and PSU)]
+f7: Adults who provided regular care or assistance to a friend or family member with a health problem or disability in the past 30 days (Puerto Rico) = 15.49 percent, weighted, of valid answers [BRFSS 2025 CAREGIV1; n valid 3,716, n yes 645; approx 95% CI 13.45 to 17.54 (Taylor, file strata and PSU)]
+f8: Caregivers whose care recipient also has Alzheimer's disease, dementia or another cognitive impairment disorder (Puerto Rico) = 20.88 percent, weighted, of valid answers [BRFSS 2025 CRGVALZD; n valid 500, n yes 85; approx 95% CI 16.51 to 25.24 (Taylor, file strata and PSU)]
+f9: Caregivers of a person with Alzheimer's or dementia who give 40 or more hours of care in an average week (Puerto Rico) = 57.05 percent, weighted, of valid answers [BRFSS 2025 CRGVHRS2; n valid 85, n yes 37; approx 95% CI 44.9 to 69.21 (Taylor, file strata and PSU)]
+f10: Caregivers of a person with Alzheimer's or dementia who give 20 or more hours of care in an average week (Puerto Rico) = 67.63 percent, weighted, of valid answers [BRFSS 2025 CRGVHRS2; n valid 85, n yes 55; approx 95% CI 54.15 to 81.1 (Taylor, file strata and PSU)]
+f11: Caregivers of a person with Alzheimer's or dementia who have given care for 5 years or more (Puerto Rico) = 56.76 percent, weighted, of valid answers [BRFSS 2025 CRGVLNG2; n valid 85, n yes 29; approx 95% CI 45.14 to 68.39 (Taylor, file strata and PSU)]
+f12: Caregivers whose care recipient is a spouse or partner (all caregivers) (Puerto Rico) = 14.42 percent, weighted, of valid answers [BRFSS 2025 CRGVREL5; n valid 594, n yes 77; approx 95% CI 5.32 to 23.53 (Taylor, file strata and PSU)]
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Burden scales, depression and respite use are not in the module. Weighted estimates by age or sex are not computed here.
+
+DO NOT USE FOR
+Treating a federal figure as the simulator's own input, comparing it with a paper whose population, definition or period differs without saying so, or filling absent costs or effects with invented values.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

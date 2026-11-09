@@ -1,0 +1,52 @@
+{
+ "entries": [
+  {
+   "review_unit_id": "cdc/brfss_2025_caregiver::brfss2025_caregiver",
+   "raw_file_id": "cdc/brfss_2025/LLCP2025ASC.zip",
+   "dataset": "cdc/brfss_2025_caregiver",
+   "txt": "BRFSS_2025_caregiver_module__ebc2730b__dementia__decision_knowledge.txt",
+   "json": "BRFSS_2025_caregiver_module__ebc2730b__dementia__decision_knowledge.json",
+   "txt_sha256": "4dfd5ac9c43e700999a05a6a461660252fea72409a9cadf251b9ce8a928f008b",
+   "json_sha256": "f64c08f1755c56bce70dc649668395063791036655a22952a6059766a00193ef",
+   "facts": 12,
+   "calculations": 0,
+   "role": "self_reported_caregiving_context_not_cost",
+   "review_status": "not_independently_reviewed",
+   "analysis_status": "derived_by_script_weighted_estimates",
+   "condition_scope": "dementia",
+   "condition_scope_basis": "derived for dementia caregivers and cognitive decline context: cdc/brfss_2025_caregiver"
+  },
+  {
+   "review_unit_id": "cdc/brfss_2025_cognitive::brfss2025_cognitive",
+   "raw_file_id": "cdc/brfss_2025/LLCP2025ASC.zip",
+   "dataset": "cdc/brfss_2025_cognitive",
+   "txt": "BRFSS_2025_cognitive_decline_module__e8b13b3e__dementia__decision_knowledge.txt",
+   "json": "BRFSS_2025_cognitive_decline_module__e8b13b3e__dementia__decision_knowledge.json",
+   "txt_sha256": "66c55158364969d8b66b769a9b5d3cbe11dc64b9c3480829b09ea9d6adbdbdf1",
+   "json_sha256": "37459391154b74e28be98d1c30ca026d1572e6fed1d8a128b33305a8c4bfaecc",
+   "facts": 10,
+   "calculations": 0,
+   "role": "self_reported_cognitive_change_context_not_diagnosis",
+   "review_status": "not_independently_reviewed",
+   "analysis_status": "derived_by_script_weighted_estimates",
+   "condition_scope": "dementia",
+   "condition_scope_basis": "derived for dementia caregivers and cognitive decline context: cdc/brfss_2025_cognitive"
+  },
+  {
+   "review_unit_id": "cdc_nchs/mortality_2022_2024_dementia::nchs_dementia_deaths_2022_2024",
+   "raw_file_id": "cdc_nchs/mortality_2016_2024/mort2022us.zip, mort2023us.zip, mort2024us.zip",
+   "dataset": "cdc_nchs/mortality_2022_2024_dementia",
+   "txt": "NCHS_mortality_2022_2024_dementia__ef9d4534__dementia__decision_knowledge.txt",
+   "json": "NCHS_mortality_2022_2024_dementia__ef9d4534__dementia__decision_knowledge.json",
+   "txt_sha256": "c0cddf084c5294a03bcb66f6b6171febc43559ee16979161b04cb9db04ebc5bd",
+   "json_sha256": "b1df7172446209add0149799574ca1372cd740625810906019b947e01a61bd6d",
+   "facts": 12,
+   "calculations": 0,
+   "role": "mortality_context_not_prevalence_not_cost",
+   "review_status": "not_independently_reviewed",
+   "analysis_status": "focused_analysis_underlying_cause_only",
+   "condition_scope": "dementia",
+   "condition_scope_basis": "derived for dementia caregivers and cognitive decline context: cdc_nchs/mortality_2022_2024_dementia"
+  }
+ ]
+}

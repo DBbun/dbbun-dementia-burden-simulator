@@ -90,7 +90,7 @@
     if (exportPanel) {
       const note = document.createElement('p');
       note.className = 'docSummary';
-      note.innerHTML = '<b>This public demo\'s download is a trimmed copy.</b> It leaves out the source paper (the Evidence tab links to it), the application source code and the full model-call audit trail. No federal data files are included because none were used.';
+      note.innerHTML = '<b>This public demo\'s download is a trimmed copy.</b> It leaves out the source paper (the Evidence tab links to it), the application source code and the full model-call audit trail. No federal data files are included; the derived federal summaries used for checks are in the repository\'s data/federal_units folder.';
       exportPanel.insertBefore(note, exportPanel.firstChild);
     }
     // Write controls that would be dead ends in a read-only copy.
