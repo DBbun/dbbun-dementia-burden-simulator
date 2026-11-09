@@ -1069,7 +1069,7 @@ function renderEvidenceMap(job){
     const vals=evalAll(x.overrides);
     const moved=outputs.find(o=>typeof vals[o.id]==='number'&&typeof baseVals[o.id]==='number'&&Math.abs(vals[o.id]-baseVals[o.id])>1e-9);
     const changes=Object.entries(x.overrides||{}).map(([id,v])=>{const inp=inputs.find(i=>i.id===id);return inp?inp.label+' from '+fmtIn(inp,inp.default)+' to '+fmtIn(inp,v):null}).filter(Boolean);
-    let text='0',size=0.02,effect='It does not change any computed result.';
+    let text='none',size=0.02,effect='At the default values of the other inputs, this scenario does not change any computed result. A result can still change if you also move other inputs on the Explore tab (for example, the correlation only matters when the burden score differs from its default).';
     if(moved){
       const delta=vals[moved.id]-baseVals[moved.id];
       text=(delta>0?'+':'\u2212')+(Math.abs(delta)>=100?Math.round(Math.abs(delta)).toLocaleString('en-US'):fmtOutputValue(Math.abs(delta)));
