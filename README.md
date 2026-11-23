@@ -4,7 +4,7 @@
 
 The demo is the website at the link above; the files in this repository are what that website is made of. The main page is the simulator library (three draft simulators with Forecast, Sensitivity, Evidence and Export tabs). `about.html` is the short description page.
 
-An independent project by DBbun LLC, adapted from its entry in the TOPx HHS Tech Sprint (Cost of Illness track), where DBbun was a Phase 1 winner and is participating in Phase 2. It is not endorsed by, and does not use the logos of, NIA, NIH or HHS.
+An independent project by DBbun LLC, adapted from its entry in the TOPx HHS Tech Sprint (Cost of Illness track), where it was a Phase 1 winner and then won a Second Place Prize in Phase 2. That award was for the earlier tool; this dementia version is a separate adaptation that has not been judged. It is not endorsed by, and does not use the logos of, NIA, NIH or HHS.
 
 Static pages describing a research prototype from DBbun LLC. Draft categories, not validated.
 
