@@ -10,4 +10,4 @@ There are three ready-made scenarios. One sets weekly hours to sixty-seven and a
 
 What it cannot tell you. The paper reports no dollar costs, no income loss and no insurance or access-barrier data, so none appear here. The results are transformations of the paper's own numbers. They are not a cost estimate and not a causal effect, and they should not be generalized beyond this sample.
 
-Draft status. A script confirmed that the numbers and quotes occur in the paper. A person read the findings against the paper. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.
+Draft status. A script confirmed that the numbers and quotes occur in the paper. A person read the findings against the paper. The burden categories were assigned by the tool but not yet reviewed by a person, and the codebook behind them is frozen for a pilot but not validated.

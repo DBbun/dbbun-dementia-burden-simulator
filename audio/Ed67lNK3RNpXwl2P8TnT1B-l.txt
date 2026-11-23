@@ -10,4 +10,4 @@ What you can change. The six inputs are the mean score, the moderate-to-severe r
 
 What it cannot tell you. It is a burden-score study, not a cost study. The paper reports no dollar costs, income loss, diagnostic delay or access-barrier data. It comes from one program in one country and should not be generalized nationally or pooled with other countries' studies. The paper also contains an inconsistency in its own caregiving-duration figures, five point six years in the text and two point six in a table, which it does not resolve.
 
-Draft status. A script confirmed the numbers and quotes occur in the paper, and a person read the findings against it. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.
+Draft status. A script confirmed the numbers and quotes occur in the paper, and a person read the findings against it. The burden categories were assigned by the tool but not yet reviewed by a person, and the codebook behind them is frozen for a pilot but not validated.

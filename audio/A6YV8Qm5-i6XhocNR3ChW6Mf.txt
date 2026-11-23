@@ -10,4 +10,4 @@ What you can change. The eight inputs are the five task-burden percentages, the 
 
 What it cannot tell you. The paper reports no costs, no caregiving hours, no income loss and no federal data. It cannot support cost-effectiveness or budget conclusions.
 
-Draft status. A script confirmed the numbers and quotes occur in the paper. A person read the findings against the paper, and some mislabeled items were corrected or removed. The burden categories are not yet assigned, and the codebook behind them is frozen for a pilot but not validated.
+Draft status. A script confirmed the numbers and quotes occur in the paper. A person read the findings against the paper, and some mislabeled items were corrected or removed. The burden categories were assigned by the tool but not yet reviewed by a person, and the codebook behind them is frozen for a pilot but not validated.
